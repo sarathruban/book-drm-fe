@@ -1,0 +1,24 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.layout-body {
+  flex: 1;
+  overflow: hidden; /* Prevent body scroll behind sidebar */
+}
+
+.content {
+  padding: 24px;
+  overflow-y: auto; /* Scroll page content independently */
+  height: 100vh;    /* Full viewport height */
+  background-color: var(--color-background);
+}
+
+/* Sidebar styling */
+.main-layout > .ant-layout-sider {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto; /* Scroll if sidebar content is long */
+  flex-shrink: 0;
+}

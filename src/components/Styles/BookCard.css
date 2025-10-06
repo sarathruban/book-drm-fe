@@ -1,0 +1,23 @@
+.book-card {
+  width: 138px;
+  height: 300px;
+}
+
+.book-cover {
+  width: 138px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.book-title {
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.book-author{
+   color: var( --color-text-secondary);
+}

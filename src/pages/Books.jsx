@@ -28,6 +28,7 @@ function Books() {
 
   return (
     <div className="books-container">
+      <h1 style={{ color: 'var(--color-primary)'}}>Books</h1>
       <Row
         gutter={[
           { xs: 8, sm: 12, md: 16, lg: 16, xl: 16 },

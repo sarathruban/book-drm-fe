@@ -1,5 +1,7 @@
 import React from "react";
 import { individualBooksApi } from "../services/books/listBooks";
+import { Image } from "antd";
+import BookDetailCard from "../components/BookDetailCard";
 
 export default function IndividualBooks() {
   const [bookData, setBookData] = React.useState({});
@@ -11,11 +13,14 @@ export default function IndividualBooks() {
     } catch (error) {}
   };
 
+
   React.useEffect(() => {
     getIndividualBook();
   }, []);
-  return;
-  <div>
-    
-  </div>;
+
+  return (
+    <>
+      <BookDetailCard bookData={bookData} />
+    </>
+  );
 }
